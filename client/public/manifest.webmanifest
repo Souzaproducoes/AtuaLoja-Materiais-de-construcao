@@ -1,0 +1,16 @@
+{
+  "name": "Atua Loja · Materiais para construir",
+  "short_name": "Atua Loja",
+  "description": "Materiais de construção, orçamento e entrega regional em Niquelândia e região.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#214d39",
+  "background_color": "#fbf8f2",
+  "categories": ["shopping", "business"],
+  "icons": [
+    { "src": "/atua-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

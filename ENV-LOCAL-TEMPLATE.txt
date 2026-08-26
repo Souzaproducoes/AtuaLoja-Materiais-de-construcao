@@ -1,0 +1,52 @@
+# Atua Loja OS — ambiente local
+# Copie este ficheiro para .env na raiz do projecto e substitua os valores entre < >.
+# Nunca publique o .env no Git, não o envie no ZIP e não coloque chaves VITE_ secretas.
+
+# ================================
+# OBRIGATÓRIAS PARA A APLICAÇÃO
+# ================================
+DATABASE_URL=postgresql://<UTILIZADOR>:<PASSWORD>@<HOST>:5432/<BASE_DE_DADOS>?sslmode=require
+JWT_SECRET=<GERAR-UMA-CHAVE-ALEATORIA-LONGA-E-PRIVADA>
+
+# Com login local, estas variáveis podem permanecer vazias.
+
+# ========================================
+# LOGIN ADMINISTRATIVO LOCAL / STAGING
+# ========================================
+# Em desenvolvimento, o acesso local funciona sem OAuth.
+# Em produção, ALLOW_LOCAL_ADMIN_LOGIN deve permanecer false ou ausente.
+LOCAL_ADMIN_USERNAME=<UTILIZADOR-ADMIN-LOCAL>
+LOCAL_ADMIN_PASSWORD=<PASSWORD-FORTE-APENAS-NO-SERVIDOR>
+LOCAL_ADMIN_NAME=Administrador Atua Loja
+LOCAL_ADMIN_EMAIL=admin@atua-loja.local
+LOCAL_ADMIN_OPEN_ID=local_admin
+ALLOW_LOCAL_ADMIN_LOGIN=false
+
+# ========================================
+# LLM — NVIDIA principal + Groq fallback
+# ========================================
+# O ASK lê estas chaves no backend. Não as coloque em variáveis VITE_ e não as publique.
+NVIDIA_API_KEY=<COLE-A-CHAVE-NVIDIA-AQUI>
+NVIDIA_BASE_URL=https://integrate.api.nvidia.com/v1
+NVIDIA_MODEL=<MODELO-NVIDIA-DISPONIVEL-NA-SUA-CONTA>
+GROQ_API_KEY=<COLE-A-CHAVE-GROQ-AQUI>
+GROQ_BASE_URL=https://api.groq.com/openai/v1
+GROQ_MODEL=<MODELO-GROQ-DISPONIVEL-NA-SUA-CONTA>
+
+# ========================================
+# ========================================
+
+# Analytics: preencha os dois ou deixe ambos vazios.
+VITE_ANALYTICS_ENDPOINT=
+VITE_ANALYTICS_WEBSITE_ID=
+
+# Porta local opcional.
+PORT=3000
+
+
+# Depois de criar o .env:
+# 1. Feche e abra novamente o PowerShell, se necessário.
+# 2. Execute npm install.
+# 3. Execute npm run dev.
+# 4. Abra http://localhost:3000/gestao.
+# 5. Para o login local, utilize LOCAL_ADMIN_USERNAME e LOCAL_ADMIN_PASSWORD.

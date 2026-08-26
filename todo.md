@@ -1,0 +1,178 @@
+# Project TODO
+
+- [x] Definir identidade visual elegante e responsiva da Atua Loja
+- [x] Criar loja pública com navegação institucional e CTA para orçamento
+- [x] Criar catálogo de materiais de construção com categorias, pesquisa e filtros
+- [x] Criar carrinho para produtos elegíveis e resumo do pedido
+- [x] Criar fluxo de pedido de orçamento com cliente, itens, endereço e anexos em S3
+- [x] Criar retirada na loja e entrega regional para Niquelândia e região
+- [x] Criar acompanhamento visual do estado do pedido
+- [x] Criar regras configuráveis de frete por zona, distância e condições
+- [x] Criar CRM de clientes, contactos, oportunidades e histórico de atendimento
+- [x] Criar conversão de orçamento em pedido sem redigitação
+- [x] Criar ERP de produtos, unidades de venda, preços, stock e reservas
+- [x] Criar compras, fornecedores, vendas e caixa gerencial
+- [x] Criar painel administrativo com permissões por função
+- [x] Criar dashboard com vendas, margem, orçamentos, stock e entregas
+- [x] Criar API tipada e queries/mutações com dados únicos
+- [x] Criar histórico de alterações e auditoria das operações sensíveis
+- [x] Criar notificações transaccionais e centro de actividade
+- [x] Criar estrutura SEO local e conteúdo institucional
+- [x] Criar cálculo/validação de área de atendimento e endereços (frete regional valida cidade/distância; geocodificação depende da API configurada)
+- [x] Integrar mapa/direcções sem expor credenciais no frontend
+- [x] Guardar imagens, anexos e comprovativos fora da base de dados
+- [x] Incluir rodapé em todas as páginas com assinatura clicável “Souza produções” para WhatsApp +55 62 99144-4852
+- [x] Escrever testes Vitest para regras de negócio e APIs
+- [x] Executar verificação TypeScript, testes e build
+- [x] Validar visualmente desktop e mobile
+- [x] Rever todo o todo.md e marcar itens concluídos antes do checkpoint
+- [x] Adicionar manifesto PWA com nome, descrição, cores e modo standalone
+- [x] Criar ícones instaláveis em tamanhos adequados e referenciá-los no manifesto
+- [x] Criar service worker com cache de shell e estratégia segura para API
+- [x] Registar o service worker no frontend sem interferir no desenvolvimento
+- [x] Adicionar prompt/botão de instalação dentro da loja
+- [x] Adicionar meta tags mobile, apple-touch-icon e tema do navegador
+- [x] Validar instalação, navegação offline básica e responsividade em mobile no sandbox (dispositivo real permanece externo)
+- [x] Criar módulo dedicado para motorista com autenticação e permissões restritas
+- [x] Criar agenda de entregas atribuídas ao motorista (via API autenticada)
+- [x] Criar rota sugerida e ordenação das paragens por menor percurso (com entregas atribuídas)
+- [x] Criar actualização de localização em tempo real durante entrega activa (persistida via API)
+- [x] Criar estados de entrega e registo de eventos com data/hora
+- [x] Criar conferência de materiais antes da saída e no destino
+- [x] Criar prova de entrega por código, assinatura, fotografia ou confirmação autorizada
+- [x] Impedir encerramento da entrega sem confirmação dos materiais entregues
+- [x] Criar fluxo de divergência, avaria, falta de material ou entrega parcial
+- [x] Criar painel de acompanhamento para gestão e cliente com privacidade adequada
+- [x] Criar política de consentimento, retenção e segurança para localização do motorista
+- [x] Adicionar testes para transições de estado e bloqueio de conclusão indevida
+- [x] Restringir /motorista no frontend e procedures de entrega por função motorista/logística
+- [x] Substituir paragens hardcoded por entregas atribuídas ao utilizador autenticado
+- [x] Ligar watchPosition à mutation driver.recordLocation com actualização periódica
+- [x] Ligar estados operacionais principais da UI à mutation driver.transition e persistir eventos (cenários avançados permanecem como evolução)
+- [x] Implementar prova de entrega completa com código validado e upload de foto/assinatura
+- [x] Persistir conferência de carga e entrega por item vinculada à entrega
+- [x] Adicionar testes de acesso e regras válidas/inválidas de entrega (cenários E2E com base real permanecem como evolução)
+- [x] Validar de forma verificável a PWA instalada e o fallback offline básico (manifesto, service worker e assets servidos; instalação em dispositivo requer teste final do cliente)
+- [x] Persistir latitude/longitude e endereço de entrega por entrega (geocodificação externa permanece dependente da API configurada)
+- [x] Substituir itens e estados genéricos das paragens por dados reais do pedido atribuído
+- [x] Implementar orçamento persistente com anexos/upload externo e validação completa de cliente, itens e endereço
+- [x] Proteger /gestao no frontend e ligar indicadores, pedidos, entregas e auditoria via tRPC (gráficos históricos avançados ficam como evolução)
+- [x] Implementar tracking real de pedidos e fluxo operacional completo de retirada versus entrega regional
+- [x] Ligar auditoria a mutações sensíveis e expor histórico consultável no painel
+- [x] Adicionar rodapé com assinatura em todas as rotas, incluindo NotFound e subpáginas
+- [x] Ampliar testes Vitest para catálogo, orçamento/frete, admin e procedures de motorista
+- [x] Implementar fluxo estruturado de divergência, avaria e falta de material com resolução
+- [x] Validar no sandbox o fluxo de instalação da PWA e registar evidência verificável (teste final em dispositivo do cliente recomendado)
+- [x] Validar no sandbox o app shell offline após primeira carga (teste sem rede em dispositivo real recomendado)
+- [x] Preparar pacote ZIP completo do projecto para download
+- [x] Verificar conteúdo e integridade do pacote ZIP entregue
+- [x] Completar CRM com clientes, contactos, oportunidades, histórico e tarefas dedicadas (funil básico implementado)
+- [x] Implementar conversão transaccional de orçamento aprovado em pedido
+- [x] Completar ERP com unidades de venda, preços, stock, movimentos e reservas
+- [x] Implementar fornecedores e pedidos de compra com entrada de mercadoria
+- [x] Implementar caixa gerencial com abertura, movimentos, fecho e conferência
+- [x] Ligar interfaces administrativas aos fluxos persistentes dos módulos completos
+- [x] Criar migrações, testes de contrato e validação visual dos módulos completos (migrações aditivas, 52 testes e builds validadas)
+- [x] Criar gestor de produtos no dashboard com listagem, pesquisa e filtros
+- [x] Permitir criar produto com nome, SKU, slug, categoria, unidade, preço, custo e peso
+- [x] Permitir editar produto e especificações técnicas persistentes
+- [x] Permitir carregar fotografia do produto para armazenamento externo
+- [x] Guardar apenas URL/chave do ficheiro na base de dados
+- [x] Permitir publicar, ocultar e reactivar produtos do catálogo
+- [x] Restringir criação e edição de produtos a funções autorizadas
+- [x] Ligar catálogo público aos produtos persistidos e publicados
+- [x] Adicionar testes para criação, edição, publicação e permissões de produtos
+- [x] Criar agente ASK modular server-side com contexto por função
+- [x] Definir agente Entrega para apoiar apenas motorista/logística em rotas, estados e divergências
+- [x] Definir agente Cliente para produtos, orçamento, pedido, entrega e atendimento regional
+- [x] Definir agente Administrador para indicadores, CRM, stock, compras, caixa e operação global
+- [x] Impedir que o agente revele dados fora da função autenticada
+- [x] Criar interface de chat reutilizável no painel, motorista e loja/cliente
+- [x] Criar respostas de fallback para indisponibilidade da IA e pedidos fora do escopo
+- [x] Adicionar testes de routing, permissões e comportamento seguro dos agentes (inclui 7 endpoints especialistas, bloqueios anónimos e fallback mockado)
+- [x] Exigir nome, contacto e endereço completo antes de confirmar compra com entrega
+- [x] Permitir orçamento inicial sem palavra-passe e completar cadastro na aprovação
+- [x] Suportar múltiplos endereços e histórico por cliente recorrente
+- [x] Gerar ZIP final actualizado após concluir os módulos
+- [x] Implementar filtros reais de estado e categoria no gestor de catálogo
+- [x] Adicionar campo de categoria ao formulário de criação e edição de produto
+- [x] Persistir a chave do ficheiro da imagem do produto além da URL
+- [x] Integrar o agente ASK como componente reutilizável na loja, motorista e gestão
+- [x] Testar via tRPC o acesso público ao agente cliente e bloqueios dos agentes internos
+- [x] Implementar filtro real por categoria no gestor de catálogo usando valores persistidos
+- [x] Adicionar teste tRPC público que invoque assistant.customer sem autenticação
+- [x] Adicionar teste tRPC que bloqueie assistant.admin para utilizadores não administradores
+- [x] Envolver a conversão de orçamento em transação atómica com rollback
+- [x] Adicionar cobertura de integração automatizada para CRM, conversão e catálogo/admin (staging com dados reais permanece validação externa)
+- [x] Documentar validação visual dos módulos efectivamente concluídos sem sobreafirmar cobertura
+- [x] Implementar recepção de mercadoria ligada ao pedido de compra, actualizando stock e estado da compra
+- [x] Adicionar conferência real de caixa com valor esperado versus contado, diferença e histórico de sessões
+- [x] Adicionar testes positivos de criação, edição e publicação de produtos
+- [x] Criar checkout real que exija nome, contacto e endereço completos para entrega
+- [x] Validar e completar cadastro do cliente no momento de aprovar/converter orçamento
+- [x] Rever marcas de conclusão das interfaces apenas depois dos fluxos estarem ponta a ponta
+- [x] Recolher endereço e frete na tela CRM antes de converter orçamento em entrega
+- [x] Criar módulo de vendas gerenciais com pedidos, registo de pagamento e ligação ao caixa
+- [x] Adicionar detalhe por cliente, tarefas dedicadas e histórico filtrável no CRM
+- [x] Tornar explícita a etapa de completar cadastro na aprovação do orçamento
+- [x] Validar código numérico e URL de comprovativo no backend de entregas com testes Vitest
+- [x] Validar pedido existente e sessão de caixa aberta no pagamento de vendas
+- [x] Auditar arquitectura, segurança, permissões, dados, UX, SEO, PWA, ERP/CRM e entregas
+- [x] Definir catálogo de agentes especialistas e escopos por módulo
+- [x] Integrar agentes especialistas no ASK com roteamento seguro por função
+- [x] Criar testes de permissões, routing e respostas seguras dos novos agentes
+- [x] Produzir relatório de auditoria com severidade, evidência e plano de correcção
+- [x] Actualizar dependências vulneráveis e confirmar auditoria sem criticidade alta/critica explorável (29 avisos low/moderate remanescentes)
+- [x] Criar agenda de endereços por cliente com endereço predefinido e histórico de uso
+- [x] Criar anexos de orçamento em S3 com metadados e controlo de acesso
+- [x] Criar checklist persistente por item da entrega com divergência por quantidade
+- [x] Criar resolução estruturada de divergências, avarias e faltas com auditoria
+- [x] Criar notificações e centro de actividade com lido/não lido
+- [x] Ligar notificações a eventos de pedido, compra, entrega e caixa sem timers em processo
+- [x] Optimizar bundle por rotas com importação dinâmica e manualChunks de vendors
+- [x] Adicionar cobertura de contrato/integridade para checkout, CRM, stock, caixa, entrega, uploads, PWA, login local, navegação admin e fornecedores LLM (66 testes; staging com dados reais continua externo)
+- [x] Validar PWA no sandbox com viewport mobile, manifesto, service worker e contratos automatizados; offline/instalação em dispositivo físico permanecem confirmação externa documentada
+- [x] Documentar no TODO as correcções concluídas e separar validações externas do backlog funcional
+- [x] Executar validação final sem erros de TypeScript, testes ou build (66 testes aprovados e build final aprovada)
+- [x] Regenerar ZIP limpo com o código e documentação finais
+- [x] Adicionar testes Vitest de contrato para anexos de orçamento/upload S3, incluindo validação de tipo/tamanho, listagem e escopo esperado
+- [x] Adicionar testes de contrato para os novos fluxos CRM, incluindo endereços, cadastro persistente e reutilização na conversão
+- [x] Reescrever o item de conclusão geral para separar correcções concluídas de validações externas e backlog funcional
+- [x] Adicionar teste de leitura/listagem e escopo esperado dos anexos de orçamento
+- [x] Adicionar testes de cadastro persistente e conversão de orçamento reutilizando endereço do cliente
+- [x] Regenerar e verificar o ZIP final limpo antes de marcar a entrega final
+- [x] Persistir explicitamente o endereço completo no orçamento e associá-lo ao endereço padrão do cliente
+- [x] Adicionar teste de contrato do orçamento com cliente, itens, endereço e anexos associados
+- [x] Capturar evidência verificável de responsividade mobile no sandbox (offline físico permanece dependente de dispositivo real)
+- [x] Reutilizar automaticamente o endereço predefinido do cliente na conversão CRM sem exigir reenvio manual
+- [x] Adicionar teste unitário da resolução de endereço explícito, predefinido e fallback cadastral
+- [x] Associar o endereço capturado no orçamento à agenda de endereços padrão do cliente e cobrir com teste
+- [x] Adicionar teste do fluxo criação de orçamento + anexo associado ao quoteId criado
+- [x] Adicionar teste integrado que reutilize o quoteId retornado por quote.create no upload/listagem do anexo
+- [x] Validar no backend que uploadAttachment só aceita quoteId existente e testar orçamento inexistente
+- [x] Validar no mesmo teste integrado a listagem do anexo pelo quoteId devolvido na criação do orçamento
+- [x] Corrigir scripts `dev` e `start` para funcionarem cross-platform no Windows PowerShell, macOS e Linux usando `cross-env`
+- [x] Regenerar o ZIP final após a correcção cross-platform e verificar os scripts no artefacto
+- [x] Validar o arranque do projecto extraído do ZIP com `npm run dev`
+- [x] Corrigir arranque local sem OAuth/analytics configurados, evitando placeholders de URL malformados e documentando as variáveis opcionais/obrigatórias
+- [x] Mostrar diagnóstico claro das configurações obrigatórias e opcionais em falta no arranque local, com instruções para `.env`
+- [x] Remover o plugin Vite incompatível com npm/Windows e validar instalação limpa sem `--legacy-peer-deps`
+- [x] Substituir o aviso placeholder de Produtos & stock por navegação para o módulo persistente de catálogo e stock
+- [x] Adicionar login administrativo local/staging por credenciais do `.env`, com comparação server-side, sessão segura e sem password no frontend
+- [x] Integrar na rota `/gestao/catalogo` uma listagem real de stock por produto e localização
+- [x] Adicionar teste de navegação que confirme que Produtos & stock abre a área operacional sem toast placeholder
+- [x] Adicionar teste UI/integrado do clique Produtos & stock, navegação para `/gestao/catalogo` e ausência do toast placeholder
+- [x] Adicionar teste de interface real para o clique em Produtos & stock no componente Admin, com jsdom e Testing Library
+- [x] Criar template seguro de ambiente local com variáveis obrigatórias, login admin e campos reservados para API NVIDIA
+- [x] Tornar OAuth external platform opcional quando o login administrativo local estiver configurado e documentar NVIDIA como fornecedor LLM separado
+- [x] Ligar o ASK a NVIDIA NIM como fornecedor principal e Groq como fallback, com chaves apenas server-side
+- [x] Fazer o ASK ler `NVIDIA_API_KEY` e `GROQ_API_KEY` do `.env`, sem chaves no frontend ou no código
+- [x] Validar nos fluxos de gestão que existe pelo menos um método de acesso: OAuth external platform ou credenciais locais completas
+- [x] Testar que login local funciona sem OAuth e que nenhum método configurado é sinalizado como configuração insuficiente
+- [x] Adicionar teste de integração de `auth.localLogin` sem OAuth, confirmando cookie e sessão local
+- [x] Adicionar teste de `logConfigDiagnostics` que confirme o aviso de acesso insuficiente sem OAuth nem login local
+- [x] Corrigir incompatibilidade da coluna `users.role` no login local, preservando dados e adicionando teste de regressão (migração SQL segura fornecida para a base local)
+- [x] Corrigir schema local antigo da tabela `users.role` e documentar migração sem perda de dados para o login administrativo
+- [x] Ignorar placeholders ou URLs external platform inválidas no proxy de storage e orientar a limpeza do `.env`; ícone PWA local adicionado para eliminar o 502 do manifest
+- [x] Corrigir configuração `.env` recebida para NVIDIA/Groq/login local sem expor ou guardar credenciais no projecto; documentar rotação após o teste
+- [x] Resolver no ambiente Windows o schema persistente de `users.role` e remover o placeholder external platform do storage para concluir o login local (SQL de reparação fornecido; execução local depende da base do utilizador)
